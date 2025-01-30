@@ -10,7 +10,7 @@ symbol = st.text_input("Enter Stock Symbol").upper()
 
 # Load API key securely (avoid hardcoding in production)
 try:
-    OPENAI_API_KEY = "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"  # Replace with a secure method like os.getenv("OPENAI_API_KEY")
+    OPENAI_API_KEY = "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"  # Replace with a secure method like os.getenv("OPENAI_API_KEY")
 except KeyError as e:
     st.error(f"Environment variable {e} not set. Please check your .env file or environment configuration.")
     st.stop()
